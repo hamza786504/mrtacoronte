@@ -16,7 +16,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <style>
+        @font-face {
+            font-family: 'WildWords';
+            src: url('fonts/CC Wild Words Roman.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
+            font-family: 'WildWords', sans-serif;
             background: linear-gradient(rgba(54, 50, 54, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') no-repeat center center/cover;
         }
 
@@ -87,7 +95,8 @@
                 class="relative text-center flex flex-col items-center justify-center mb-8 wow animate__animated animate__fadeInDown">
 
                 <!-- Background Glow -->
-                <div class="absolute inset-0" style="background: radial-gradient(circle at center,rgba(85, 109, 247, 0.6) 0%, rgba(85, 109, 247,0.3) 30%, rgba(85, 109, 247,0.1) 55%, transparent 80%);">
+                <div class="absolute inset-0"
+                    style="background: radial-gradient(circle at center,rgba(85, 109, 247, 0.6) 0%, rgba(85, 109, 247,0.3) 30%, rgba(85, 109, 247,0.1) 55%, transparent 80%);">
                 </div>
 
                 <!-- Top Border Fade -->
@@ -104,7 +113,7 @@
                     SUBTITLING TASK
                 </h2>
 
-                <p class="text-center z-10 mb-6">(Click on the images to access, it is easy!!)</p>
+                <p class="text-center text-2xl z-10 mb-6">(Click on the images to access, it is easy!!)</p>
             </div>
             <div class="grid md:grid-cols-2 gap-2">
 
@@ -118,10 +127,12 @@
 
                 <!-- Card 2 -->
                 <div class="relative card card-hover glow rounded-xl overflow-hidden cursor-pointer">
-                    <img src="2.jpg" class="object-cover h-full w-full">
-                    <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
-                        Student Questionnaire
-                    </div>
+                    <a href="https://forms.gle/PjcK65QPeFR4goAn7">
+                        <img src="2.jpg" class="object-cover h-full w-full">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
+                            Student Questionnaire
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -131,69 +142,75 @@
         <div class="glass p-3 py-6 rounded-xl mb-4 wow animate__animated animate__fadeInUp">
 
 
-             <div
-            class="relative text-center h-[80px] flex items-center justify-center mb-3  wow animate__animated animate__fadeInDown">
+            <div
+                class="relative text-center h-[80px] flex items-center justify-center mb-3  wow animate__animated animate__fadeInDown">
 
-            <!-- Background Glow -->
-            <div class="absolute inset-0" style="
+                <!-- Background Glow -->
+                <div class="absolute inset-0" style="
         background: radial-gradient(circle at center,
         rgba(168,85,247,0.6) 0%,
         rgba(168,85,247,0.3) 30%,
         rgba(168,85,247,0.1) 55%,
         transparent 80%);
         ">
-            </div>
+                </div>
 
-            <!-- Top Border Fade -->
-            <div class="absolute top-0 left-0 w-full h-[2px]" style="
+                <!-- Top Border Fade -->
+                <div class="absolute top-0 left-0 w-full h-[2px]" style="
         background: linear-gradient(to right,
         transparent,
         rgba(168,85,247,0.8),
         transparent);
         ">
-            </div>
+                </div>
 
-            <!-- Bottom Border Fade -->
-            <div class="absolute bottom-0 left-0 w-full h-[2px]" style="
+                <!-- Bottom Border Fade -->
+                <div class="absolute bottom-0 left-0 w-full h-[2px]" style="
         background: linear-gradient(to right,
         transparent,
         rgba(168,85,247,0.8),
         transparent);
         ">
+                </div>
+
+                <h2 class="text-center z-10 text-xl md:text-2xl font-bold mb-0">
+                    2. VIDEOGAME
+                </h2>
+
+
             </div>
 
-          <h2 class="text-center z-10 text-xl md:text-2xl font-bold mb-0">
-                2. VIDEOGAME
-            </h2>
 
-
-        </div>
-            
-            
             <div class="grid mt-10 md:grid-cols-3 gap-2">
 
                 <!-- Card 3 -->
                 <div class="relative card card-hover bg-black text-center py-3 font-semibold">
-                    <img src="3.jpg" class="w-full">
-                    <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
-                        Play the Game
-                    </div>
+                    <a href="https://jptac.itch.io/tophero">
+                        <img src="3.jpg" class="w-full">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
+                            Play the Game
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="relative card card-hover bg-black text-center py-3 font-semibold">
-                    <img src="4.jpg" class="w-full">
-                    <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
-                        Student Questionnaire
-                    </div>
+                    <a href="https://forms.gle/xMBcjQ5by11fkBNr6">
+                        <img src="4.jpg" class="w-full">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
+                            Student Questionnaire
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Card 5 -->
                 <div class="relative card card-hover bg-black text-center py-3 font-semibold">
-                    <img src="5.jpg" class="w-full">
-                    <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
-                        Teacher Questionnaire
-                    </div>
+                    <a href="https://forms.gle/S5Mqa1UaWwdoXvx86">
+                        <img src="5.jpg" class="w-full">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black text-center py-3 font-semibold">
+                            Teacher Questionnaire
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -203,50 +220,59 @@
         <div class="glass p-7 rounded-xl wow animate__animated animate__fadeInUp">
 
 
-             <div
-            class="relative text-center flex flex-col items-center justify-center mb-0  wow animate__animated animate__fadeInDown">
+            <div
+                class="relative text-center flex flex-col items-center justify-center mb-0  wow animate__animated animate__fadeInDown">
 
-            <!-- Background Glow -->
-            <div class="absolute inset-0" style="
+                <!-- Background Glow -->
+                <div class="absolute inset-0" style="
         background: radial-gradient(circle at center,
         rgba(168,85,247,0.6) 0%,
         rgba(168,85,247,0.3) 30%,
         rgba(168,85,247,0.1) 55%,
         transparent 80%);
         ">
-            </div>
+                </div>
 
-            <!-- Top Border Fade -->
-            <div class="absolute top-0 left-0 w-full h-[2px]" style="
-        background: linear-gradient(to right,
-        transparent,
-        rgba(168,85,247,0.8),
-        transparent);
-        ">
-            </div>
-
-            <!-- Bottom Border Fade -->
-            <div class="absolute bottom-0 left-0 w-full h-[2px]" style="
+                <!-- Top Border Fade -->
+                <div class="absolute top-0 left-0 w-full h-[2px]" style="
         background: linear-gradient(to right,
         transparent,
         rgba(168,85,247,0.8),
         transparent);
         ">
                 </div>
-  <h2 class="text-center z-10 text-xl md:text-2xl font-bold my-4">
-                3. MISCELLANEA
-            </h2>
 
-            <p class="z-10 text-center mb-6">
-                This section is just for the Genially interactive presentation.
-            </p>
+                <!-- Bottom Border Fade -->
+                <div class="absolute bottom-0 left-0 w-full h-[2px]" style="
+        background: linear-gradient(to right,
+        transparent,
+        rgba(168,85,247,0.8),
+        transparent);
+        ">
+                </div>
+                <h2 class="text-center z-10 text-xl md:text-2xl font-bold my-4">
+                    3. MISCELLANEA
+                </h2>
+
+                <p class="z-10 text-center text-2xl mb-6">
+                    This section is just for the Genially interactive presentation.
+                </p>
 
 
-        </div>
+            </div>
 
-          
+
             <div class="mt-10 rounded-xl card card-hover  overflow-hidden glow">
-                <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="ENGLISH DIGITAL UNITS" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/621bac7bd78bcf0019040b30" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+                <div style="width: 100%;">
+                    <a href="https://view.genially.com/621bac7bd78bcf0019040b30">
+                        <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe
+                                title="ENGLISH DIGITAL UNITS" frameborder="0" width="1200" height="675"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://view.genially.com/621bac7bd78bcf0019040b30" type="text/html"
+                                allowscriptaccess="always" allowfullscreen="true" scrolling="yes"
+                                allownetworking="all"></iframe> </div>
+                    </a>
+                </div>
 
             </div>
 
